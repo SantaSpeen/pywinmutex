@@ -5,10 +5,11 @@ description = "Simple handling mutexes with pywin32"
 authors = [
     {name = "SantaSpeen",email = "santaspeen@gmail.com"}
 ]
-license = {text = "MIT"}
+license = {text = "MIT License"}
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.10,<4.0"
 dependencies = [
+    "pywin32 (>=310,<311)"
 ]
 
 
