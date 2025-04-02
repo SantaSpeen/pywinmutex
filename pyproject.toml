@@ -1,6 +1,6 @@
 [project]
 name = "winmutex"
-version = "1.0.0"
+version = "1.0.1"
 description = "Simple handling mutexes with pywin32"
 authors = [
     {name = "SantaSpeen",email = "santaspeen@gmail.com"}
@@ -11,7 +11,17 @@ requires-python = ">=3.10,<4.0"
 dependencies = [
     "pywin32 (>=310,<311)"
 ]
+dynamic = [ "classifiers" ]
 
+[project.urls]
+repository = "https://github.com/SantaSpeen/winmutex"
+
+[tool.poetry]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Operating System :: Microsoft :: Windows",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
