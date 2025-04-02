@@ -1,4 +1,4 @@
-# pywinmutex
+# WinMutex
 
 A simple Python library to create and manage Windows mutexes.
 
