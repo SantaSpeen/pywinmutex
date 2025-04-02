@@ -1,6 +1,6 @@
-from pywinmutex import WindowsMutex
+from winmutex import WindowsMutex
 
-mutex = WindowsMutex("anidev/pywinmutex/simple", True)  # Name may be any string
+mutex = WindowsMutex("anidev/winmutex/simple", True)  # Name may be any string
 mutex.timeout = 2500  # Set a timeout of 2.5 seconds
 
 with mutex:

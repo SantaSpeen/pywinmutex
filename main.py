@@ -1,4 +1,4 @@
-from pywinmutex import WindowsMutex
+from winmutex import WindowsMutex
 
 mutex_name = "anidev.myapp.mutex.{}"  # Name constructor
 mutex = WindowsMutex(mutex_name.format(0), True)

@@ -1,6 +1,6 @@
-from pywinmutex import WindowsMutex
+from winmutex import WindowsMutex
 
-mutex = WindowsMutex("anidev/pywinmutex/acquire", True)  # Name may be any string
+mutex = WindowsMutex("anidev/winmutex/acquire", True)  # Name may be any string
 
 if not mutex.acquire(5000):  # Acquire the mutex with a timeout of 5 seconds; None for no timeout
     print(f"[W] Mutex({mutex}) already exists or acquire timeout exceeded.")

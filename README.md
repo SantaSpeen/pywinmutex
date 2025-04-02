@@ -7,16 +7,17 @@ A simple Python library to create and manage Windows mutexes.
 You can install the library using pip:
 
 ```bash
-pip install pywinmutex
+pip install winmutex
 ```
 
 ## Usage
 
 ### Basic Example
-```python
-from pywinmutex import WindowsMutex
 
-mutex = WindowsMutex("anidev/pywinmutex/simple", True)  # Name may be any string
+```python
+from winmutex import WindowsMutex
+
+mutex = WindowsMutex("anidev/winmutex/simple", True)  # Name may be any string
 mutex.timeout = 2500  # Set a timeout of 2.5 seconds
 
 with mutex:
@@ -27,10 +28,11 @@ print(f"[I] Mutex({mutex}) released. Exiting...")
 ```
 
 ### Legacy
-```python
-from pywinmutex import WindowsMutex
 
-mutex = WindowsMutex("anidev/pywinmutex/acquire", True)  # Name may be any string
+```python
+from winmutex import WindowsMutex
+
+mutex = WindowsMutex("anidev/winmutex/acquire", True)  # Name may be any string
 
 if not mutex.acquire(5000):  # Acquire the mutex with a timeout of 5 seconds; None for no timeout
     print(f"[W] Mutex({mutex}) already exists or acquire timeout exceeded.")

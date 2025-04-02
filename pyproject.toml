@@ -1,6 +1,6 @@
 [project]
-name = "pywinmutex"
-version = "0.1.0"
+name = "winmutex"
+version = "1.0.0"
 description = "Simple handling mutexes with pywin32"
 authors = [
     {name = "SantaSpeen",email = "santaspeen@gmail.com"}
